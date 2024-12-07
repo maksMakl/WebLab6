@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault(); 
         
         const formData = new FormData(form);
-        console.log(formData.entries[0]);
         
         fetch("/submit", {
             method: "POST",
