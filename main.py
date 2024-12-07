@@ -2,6 +2,7 @@ from flask import Flask, request, render_template, jsonify
 import os
 
 app = Flask(__name__)
+app.config['DEBUG'] = False
 
 @app.route("/")
 def send_page():
